@@ -7,9 +7,9 @@ struct ContentView: View {
     var body: some View {
         VStack {
             if isFirstLaunch {
-                Text("hey")
+                TutorialView()
             } else {
-                Text("hey again")
+                MenuView()
             }
         }
         .onAppear(perform: checkFirstLaunch)
@@ -18,6 +18,14 @@ struct ContentView: View {
     func checkFirstLaunch() {
         isFirstLaunch = !UserDefaultsManager.defaults.bool(forKey: Keys.isFirstLauchKey.rawValue)
         UserDefaultsManager().isFirstTime(isFirstLaunch: isFirstLaunch)
+        print(isFirstLaunch)
+        if isFirstLaunch {
+            UserDefaultsManager.defaults.set(1, forKey: Keys.levelNumberRectangle.rawValue)
+            UserDefaultsManager.defaults.set(1, forKey: Keys.levelNumber.rawValue)
+            UserDefaultsManager.defaults.set(1, forKey: Keys.sunCount.rawValue)
+            UserDefaultsManager.defaults.set(1, forKey: Keys.levelNumberRectangleBasket.rawValue)
+            UserDefaultsManager.defaults.set(1, forKey: Keys.levelNumberBasket.rawValue)
+        }
     }
 }
 

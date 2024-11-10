@@ -7,18 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		865B52A62CDFEF9C0073F78B /* PauseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B52A52CDFEF9C0073F78B /* PauseView.swift */; };
+		865B52A92CE020C50073F78B /* BasketballGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B52A82CE020C50073F78B /* BasketballGameView.swift */; };
+		86ABFBD82CE13EAB00E2892E /* LevelBasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ABFBD72CE13EAB00E2892E /* LevelBasketView.swift */; };
+		86ABFBDA2CE1675000E2892E /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ABFBD92CE1675000E2892E /* TutorialView.swift */; };
+		86B4D6F22CDB5B9700D18884 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B4D6F12CDB5B9700D18884 /* SettingsView.swift */; };
+		86BCCAD22CD3E214004F5DF5 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BCCAD12CD3E214004F5DF5 /* LevelView.swift */; };
 		86CF99DF2CD2C8DB00B6E9E2 /* ChampionSnakesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CF99DE2CD2C8DB00B6E9E2 /* ChampionSnakesApp.swift */; };
 		86CF99E12CD2C8DB00B6E9E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CF99E02CD2C8DB00B6E9E2 /* ContentView.swift */; };
 		86CF99E32CD2C8DB00B6E9E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CF99E22CD2C8DB00B6E9E2 /* Assets.xcassets */; };
 		86CF99E62CD2C8DB00B6E9E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CF99E52CD2C8DB00B6E9E2 /* Preview Assets.xcassets */; };
+		86CF99F42CD2CAF200B6E9E2 /* Go Pro (Numbers, Symbols, Latin Language more Ligatures).webloc in Resources */ = {isa = PBXBuildFile; fileRef = 86CF99EF2CD2CAF200B6E9E2 /* Go Pro (Numbers, Symbols, Latin Language more Ligatures).webloc */; };
+		86CF99F52CD2CAF200B6E9E2 /* Poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86CF99F02CD2CAF200B6E9E2 /* Poster.jpg */; };
+		86CF99F62CD2CAF200B6E9E2 /* Sequel License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 86CF99F12CD2CAF200B6E9E2 /* Sequel License.rtf */; };
+		86CF99F72CD2CAF200B6E9E2 /* Sequel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86CF99F22CD2CAF200B6E9E2 /* Sequel-Regular.ttf */; };
+		86CF99FB2CD2CC2400B6E9E2 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CF99FA2CD2CC2400B6E9E2 /* ContentModel.swift */; };
+		86CF99FD2CD2CC3A00B6E9E2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CF99FC2CD2CC3A00B6E9E2 /* ContentViewModel.swift */; };
+		86CF9A002CD2CC5400B6E9E2 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CF99FF2CD2CC5400B6E9E2 /* UserDefaultsManager.swift */; };
+		86CF9A062CD2CD3600B6E9E2 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CF9A052CD2CD3600B6E9E2 /* MenuView.swift */; };
+		86DD2CCF2CD3B46A00E1A9BE /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DD2CCE2CD3B46A00E1A9BE /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		865B52A52CDFEF9C0073F78B /* PauseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseView.swift; sourceTree = "<group>"; };
+		865B52A82CE020C50073F78B /* BasketballGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballGameView.swift; sourceTree = "<group>"; };
+		86ABFBD72CE13EAB00E2892E /* LevelBasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelBasketView.swift; sourceTree = "<group>"; };
+		86ABFBD92CE1675000E2892E /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		86B4D6F12CDB5B9700D18884 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		86BCCAD12CD3E214004F5DF5 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
 		86CF99DB2CD2C8DB00B6E9E2 /* ChampionSnakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChampionSnakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CF99DE2CD2C8DB00B6E9E2 /* ChampionSnakesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionSnakesApp.swift; sourceTree = "<group>"; };
 		86CF99E02CD2C8DB00B6E9E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		86CF99E22CD2C8DB00B6E9E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86CF99E52CD2C8DB00B6E9E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86CF99EE2CD2CACD00B6E9E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86CF99EF2CD2CAF200B6E9E2 /* Go Pro (Numbers, Symbols, Latin Language more Ligatures).webloc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Go Pro (Numbers, Symbols, Latin Language more Ligatures).webloc"; sourceTree = "<group>"; };
+		86CF99F02CD2CAF200B6E9E2 /* Poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Poster.jpg; sourceTree = "<group>"; };
+		86CF99F12CD2CAF200B6E9E2 /* Sequel License.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Sequel License.rtf"; sourceTree = "<group>"; };
+		86CF99F22CD2CAF200B6E9E2 /* Sequel-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sequel-Regular.ttf"; sourceTree = "<group>"; };
+		86CF99FA2CD2CC2400B6E9E2 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		86CF99FC2CD2CC3A00B6E9E2 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		86CF99FF2CD2CC5400B6E9E2 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		86CF9A052CD2CD3600B6E9E2 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		86DD2CCE2CD3B46A00E1A9BE /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,10 +63,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		865B52A72CDFEFA00073F78B /* PauseModule */ = {
+			isa = PBXGroup;
+			children = (
+				865B52A52CDFEF9C0073F78B /* PauseView.swift */,
+			);
+			path = PauseModule;
+			sourceTree = "<group>";
+		};
+		865B52AA2CE020C80073F78B /* BasketballGameView */ = {
+			isa = PBXGroup;
+			children = (
+				865B52A82CE020C50073F78B /* BasketballGameView.swift */,
+			);
+			path = BasketballGameView;
+			sourceTree = "<group>";
+		};
+		86ABFBDB2CE16BAA00E2892E /* TutorialModule  */ = {
+			isa = PBXGroup;
+			children = (
+				86ABFBD92CE1675000E2892E /* TutorialView.swift */,
+			);
+			path = "TutorialModule ";
+			sourceTree = "<group>";
+		};
+		86B4D6F32CDB5BA000D18884 /* SettingsModule */ = {
+			isa = PBXGroup;
+			children = (
+				86B4D6F12CDB5B9700D18884 /* SettingsView.swift */,
+			);
+			path = SettingsModule;
+			sourceTree = "<group>";
+		};
+		86BCCAD32CD3E21B004F5DF5 /* LevelModule  */ = {
+			isa = PBXGroup;
+			children = (
+				86BCCAD12CD3E214004F5DF5 /* LevelView.swift */,
+				86ABFBD72CE13EAB00E2892E /* LevelBasketView.swift */,
+			);
+			path = "LevelModule ";
+			sourceTree = "<group>";
+		};
 		86CF99D22CD2C8DB00B6E9E2 = {
 			isa = PBXGroup;
 			children = (
 				86CF99DD2CD2C8DB00B6E9E2 /* ChampionSnakes */,
+				86CF99E22CD2C8DB00B6E9E2 /* Assets.xcassets */,
 				86CF99DC2CD2C8DB00B6E9E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,9 +124,10 @@
 		86CF99DD2CD2C8DB00B6E9E2 /* ChampionSnakes */ = {
 			isa = PBXGroup;
 			children = (
-				86CF99DE2CD2C8DB00B6E9E2 /* ChampionSnakesApp.swift */,
-				86CF99E02CD2C8DB00B6E9E2 /* ContentView.swift */,
-				86CF99E22CD2C8DB00B6E9E2 /* Assets.xcassets */,
+				86CF9A042CD2CCE500B6E9E2 /* Application */,
+				86CF99FE2CD2CC4600B6E9E2 /* Modules */,
+				86CF9A022CD2CC9A00B6E9E2 /* Services */,
+				86CF9A032CD2CCD300B6E9E2 /* Resourses */,
 				86CF99E42CD2C8DB00B6E9E2 /* Preview Content */,
 			);
 			path = ChampionSnakes;
@@ -65,6 +139,99 @@
 				86CF99E52CD2C8DB00B6E9E2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		86CF99F32CD2CAF200B6E9E2 /* Sequel Font */ = {
+			isa = PBXGroup;
+			children = (
+				86CF99EF2CD2CAF200B6E9E2 /* Go Pro (Numbers, Symbols, Latin Language more Ligatures).webloc */,
+				86CF99F02CD2CAF200B6E9E2 /* Poster.jpg */,
+				86CF99F12CD2CAF200B6E9E2 /* Sequel License.rtf */,
+				86CF99F22CD2CAF200B6E9E2 /* Sequel-Regular.ttf */,
+			);
+			path = "Sequel Font";
+			sourceTree = "<group>";
+		};
+		86CF99F82CD2CB5C00B6E9E2 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				86CF99F32CD2CAF200B6E9E2 /* Sequel Font */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		86CF99F92CD2CC0600B6E9E2 /* ContentModule */ = {
+			isa = PBXGroup;
+			children = (
+				86CF99E02CD2C8DB00B6E9E2 /* ContentView.swift */,
+				86CF99FA2CD2CC2400B6E9E2 /* ContentModel.swift */,
+				86CF99FC2CD2CC3A00B6E9E2 /* ContentViewModel.swift */,
+			);
+			path = ContentModule;
+			sourceTree = "<group>";
+		};
+		86CF99FE2CD2CC4600B6E9E2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				86B4D6F32CDB5BA000D18884 /* SettingsModule */,
+				86CF99F92CD2CC0600B6E9E2 /* ContentModule */,
+				86CF9A072CD2CD3900B6E9E2 /* MenuModule */,
+				86DD2CD02CD3B46F00E1A9BE /* GameModule */,
+				86BCCAD32CD3E21B004F5DF5 /* LevelModule  */,
+				865B52A72CDFEFA00073F78B /* PauseModule */,
+				865B52AA2CE020C80073F78B /* BasketballGameView */,
+				86ABFBDB2CE16BAA00E2892E /* TutorialModule  */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		86CF9A012CD2CC6600B6E9E2 /* UserDefalutsManager */ = {
+			isa = PBXGroup;
+			children = (
+				86CF99FF2CD2CC5400B6E9E2 /* UserDefaultsManager.swift */,
+			);
+			path = UserDefalutsManager;
+			sourceTree = "<group>";
+		};
+		86CF9A022CD2CC9A00B6E9E2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				86CF9A012CD2CC6600B6E9E2 /* UserDefalutsManager */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		86CF9A032CD2CCD300B6E9E2 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				86CF99F82CD2CB5C00B6E9E2 /* Font */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		86CF9A042CD2CCE500B6E9E2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				86CF99EE2CD2CACD00B6E9E2 /* Info.plist */,
+				86CF99DE2CD2C8DB00B6E9E2 /* ChampionSnakesApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		86CF9A072CD2CD3900B6E9E2 /* MenuModule */ = {
+			isa = PBXGroup;
+			children = (
+				86CF9A052CD2CD3600B6E9E2 /* MenuView.swift */,
+			);
+			path = MenuModule;
+			sourceTree = "<group>";
+		};
+		86DD2CD02CD3B46F00E1A9BE /* GameModule */ = {
+			isa = PBXGroup;
+			children = (
+				86DD2CCE2CD3B46A00E1A9BE /* GameView.swift */,
+			);
+			path = GameModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				86CF99E62CD2C8DB00B6E9E2 /* Preview Assets.xcassets in Resources */,
+				86CF99F62CD2CAF200B6E9E2 /* Sequel License.rtf in Resources */,
+				86CF99F72CD2CAF200B6E9E2 /* Sequel-Regular.ttf in Resources */,
+				86CF99F42CD2CAF200B6E9E2 /* Go Pro (Numbers, Symbols, Latin Language more Ligatures).webloc in Resources */,
+				86CF99F52CD2CAF200B6E9E2 /* Poster.jpg in Resources */,
 				86CF99E32CD2C8DB00B6E9E2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +308,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86CF99FD2CD2CC3A00B6E9E2 /* ContentViewModel.swift in Sources */,
+				86ABFBDA2CE1675000E2892E /* TutorialView.swift in Sources */,
+				86CF9A062CD2CD3600B6E9E2 /* MenuView.swift in Sources */,
+				86CF9A002CD2CC5400B6E9E2 /* UserDefaultsManager.swift in Sources */,
+				86B4D6F22CDB5B9700D18884 /* SettingsView.swift in Sources */,
 				86CF99E12CD2C8DB00B6E9E2 /* ContentView.swift in Sources */,
+				86ABFBD82CE13EAB00E2892E /* LevelBasketView.swift in Sources */,
 				86CF99DF2CD2C8DB00B6E9E2 /* ChampionSnakesApp.swift in Sources */,
+				865B52A92CE020C50073F78B /* BasketballGameView.swift in Sources */,
+				86BCCAD22CD3E214004F5DF5 /* LevelView.swift in Sources */,
+				865B52A62CDFEF9C0073F78B /* PauseView.swift in Sources */,
+				86CF99FB2CD2CC2400B6E9E2 /* ContentModel.swift in Sources */,
+				86DD2CCF2CD3B46A00E1A9BE /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +457,7 @@
 				DEVELOPMENT_TEAM = 59WWFG63NN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChampionSnakes/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +487,7 @@
 				DEVELOPMENT_TEAM = 59WWFG63NN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChampionSnakes/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
