@@ -27,8 +27,12 @@ struct PauseView: View {
                     }
                     .frame(minWidth: 100, maxWidth: 135, minHeight: 58, maxHeight: 58)
                     .padding()
-                    .background((Color(#colorLiteral(red: 16/255, green: 117/255, blue: 189/255, alpha: 1))))
+                    .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
                     .cornerRadius(20)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(.white, lineWidth: 4)
+                    )
                 }
                 .padding()
                 Spacer()
@@ -43,9 +47,9 @@ struct PauseView: View {
                             Text("MENU")
                                 .frame(width: 155, height: 48)
                                 .padding()
-                                .background(colorOfBack)
+                                .background(.white)
                                 .font(.custom("Sequel-Regular", size: 30).bold())
-                                .foregroundColor(.white)
+                                .foregroundColor(.red)
                                 .cornerRadius(20)
                                 .bold()
                         }
@@ -53,8 +57,12 @@ struct PauseView: View {
                     }
                     .frame(width: 195, height: 88)
                     .padding()
-                    .background((Color(#colorLiteral(red: 16/255, green: 117/255, blue: 189/255, alpha: 1))))
+                    .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
                     .cornerRadius(20)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(.white, lineWidth: 4)
+                    )
                     .padding()
                     
                     HStack {
@@ -64,9 +72,9 @@ struct PauseView: View {
                             Text("RETRY")
                                 .frame(width: 155, height: 48)
                                 .padding()
-                                .background(colorOfBack)
+                                .background(.white)
                                 .font(.custom("Sequel-Regular", size: 30).bold())
-                                .foregroundColor(.white)
+                                .foregroundColor(.red)
                                 .cornerRadius(20)
                                 .bold()
                         }
@@ -74,8 +82,12 @@ struct PauseView: View {
                     }
                     .frame(width: 195, height: 88)
                     .padding()
-                    .background((Color(#colorLiteral(red: 16/255, green: 117/255, blue: 189/255, alpha: 1))))
+                    .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
                     .cornerRadius(20)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(.white, lineWidth: 4)
+                    )
                     .padding()
                 }
                 Spacer(minLength: 200)

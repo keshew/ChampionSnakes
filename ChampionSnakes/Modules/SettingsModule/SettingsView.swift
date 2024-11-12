@@ -4,7 +4,7 @@ struct SettingsView: View {
     @State var currentIndexMusic = 0
     @State var currentIndexSound = 0
     @State var isBackButtonTapped = false
-    @State var backgroundColorOfImage = Color.green
+    @State var backgroundColorOfImage = Color.white
     
     var arrayOfMusic = ["0%", "10%", "20%", "30%", "40%", "50%","60%", "70%","80%", "90%", "100%"]
     
@@ -41,8 +41,12 @@ struct SettingsView: View {
                             .foregroundColor(.white)
                     .frame(width: 200, height: 50)
                     .padding(EdgeInsets(top: 30, leading: 15, bottom: 30, trailing: 15))
-                    .background((Color(#colorLiteral(red: 16/255, green: 117/255, blue: 189/255, alpha: 1))))
+                    .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
                     .cornerRadius(40)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 40)
+                            .stroke(.white, lineWidth: 4)
+                    )
                     
                     Button(action: {
                         currentIndexMusic = currentIndexMusic - 1
@@ -53,8 +57,8 @@ struct SettingsView: View {
                             .frame(width: 26, height: 26)
                             .padding()
                             .bold()
-                            .foregroundColor(.white)
-                            .background(currentIndexMusic == 0 ? Color.gray : Color.green)
+                            .foregroundColor(.red)
+                            .background(currentIndexMusic == 0 ? Color.gray : Color.white)
                             .cornerRadius(30)
                     }
                     .disabled(currentIndexMusic == 0 ? true : false)
@@ -69,8 +73,8 @@ struct SettingsView: View {
                             .frame(width: 26, height: 26)
                             .padding()
                             .bold()
-                            .foregroundColor(.white)
-                            .background(currentIndexMusic == 10 ? Color.gray : Color.green)
+                            .foregroundColor(.red)
+                            .background(currentIndexMusic == 10 ? Color.gray : Color.white)
                             .cornerRadius(30)
                     }
                     .disabled(currentIndexMusic == 10 ? true : false)
@@ -89,8 +93,12 @@ struct SettingsView: View {
                     }
                     .frame(width: 200, height: 50)
                     .padding(EdgeInsets(top: 30, leading: 15, bottom: 30, trailing: 15))
-                    .background((Color(#colorLiteral(red: 16/255, green: 117/255, blue: 189/255, alpha: 1))))
+                    .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
                     .cornerRadius(40)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 40)
+                            .stroke(.white, lineWidth: 4)
+                    )
                     
                     Button(action: {
                         currentIndexSound = currentIndexSound - 1
@@ -101,8 +109,8 @@ struct SettingsView: View {
                             .frame(width: 26, height: 26)
                             .padding()
                             .bold()
-                            .foregroundColor(.white)
-                            .background(currentIndexSound == 0 ? Color.gray : Color.green)
+                            .foregroundColor(.red)
+                            .background(currentIndexSound == 0 ? Color.gray : Color.white)
                             .cornerRadius(30)
                     }
                     .disabled(currentIndexSound == 0 ? true : false)
@@ -117,8 +125,8 @@ struct SettingsView: View {
                             .frame(width: 26, height: 26)
                             .padding()
                             .bold()
-                            .foregroundColor(.white)
-                            .background(currentIndexSound == 10 ? Color.gray : Color.green)
+                            .foregroundColor(.red)
+                            .background(currentIndexSound == 10 ? Color.gray : Color.white)
                             .cornerRadius(30)
                     }
                     .disabled(currentIndexSound == 10 ? true : false)

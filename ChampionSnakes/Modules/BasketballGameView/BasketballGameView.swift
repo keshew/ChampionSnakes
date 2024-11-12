@@ -10,7 +10,7 @@ struct BasketballGameView: View {
     @State var isLevelCompleted = false
     @State var isLevelFailed = false
     @State var isPause = false
-    @State var backgroundColorOfImage = Color.yellow
+    @State var backgroundColorOfImage = Color.white
     @State var timer: Timer?
     
     func buttonAction() {
@@ -40,8 +40,12 @@ struct BasketballGameView: View {
                         }
                         .frame(minWidth: 100, maxWidth: 135, minHeight: 78, maxHeight: 78)
                         .padding()
-                        .background((Color(#colorLiteral(red: 16/255, green: 117/255, blue: 189/255, alpha: 1))))
+                        .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
                         .cornerRadius(20)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(.white, lineWidth: 4)
+                        }
                         Spacer()
                         ButtonView(backgroundColorOfImage: $backgroundColorOfImage, imageForButton: "pause", action: buttonAction)
                     }
@@ -79,20 +83,20 @@ struct BasketballGameView: View {
                         Text("UP")
                             .frame(width: 155, height: 28)
                             .padding()
-                            .background(.yellow)
+                            .background(.white)
                             .font(.custom("Sequel-Regular", size: 30).bold())
-                            .foregroundColor(.white)
+                            .foregroundColor(.red)
                             .cornerRadius(20)
                             .bold()
                     }
                 }
                 .frame(width: 195, height: 58)
                 .padding()
-                .background((Color(#colorLiteral(red: 16/255, green: 117/255, blue: 189/255, alpha: 1))))
+                .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
                 .cornerRadius(20)
                 .overlay {
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(lineWidth: 2)
+                        .stroke(Color(#colorLiteral(red: 150/255, green: 39/255, blue: 1/255, alpha: 1)), lineWidth: 2)
                 }
                 .offset(x: -10, y: 10)
                 .padding()
@@ -249,12 +253,12 @@ struct VerticalMovingNumbers: View {
                         ForEach(0..<6, id: \.self) { index in
                             Text("\(elements[index].name)")
                                 .frame(minWidth: 30, maxWidth: 70, minHeight: 30, maxHeight: 70)
-                                .background(.blue)
                                 .foregroundColor(.white)
                                 .font(.custom("Sequel-Regular", size: 20).bold())
+                                .background(Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1)))
                                 .overlay {
                                     RoundedRectangle(cornerRadius: 0)
-                                        .stroke(lineWidth: 2)
+                                        .stroke(Color(#colorLiteral(red: 150/255, green: 39/255, blue: 1/255, alpha: 1)), lineWidth: 2)
                                 }
                                 .position(x: position.x, y: elements[index].coordinates.y)
                                 .frame(minWidth: 60, maxWidth: 70, minHeight: 20, maxHeight: 70)
@@ -275,12 +279,12 @@ struct VerticalMovingNumbers: View {
                         ForEach(0..<6, id: \.self) { index in
                             Text("\(elements2[index].name)")
                                 .frame(minWidth: 30, maxWidth: 70, minHeight: 30, maxHeight: 70)
-                                .background(.blue)
                                 .foregroundColor(.white)
                                 .font(.custom("Sequel-Regular", size: 20).bold())
+                                .background(Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1)))
                                 .overlay {
                                     RoundedRectangle(cornerRadius: 0)
-                                        .stroke(lineWidth: 2)
+                                        .stroke(Color(#colorLiteral(red: 150/255, green: 39/255, blue: 1/255, alpha: 1)), lineWidth: 2)
                                 }
                                 .position(x: position.x, y: elements2[index].coordinates.y)
                                 .frame(minWidth: 60, maxWidth: 70, minHeight: 20, maxHeight: 70)

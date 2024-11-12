@@ -10,7 +10,7 @@ struct GameView: View {
     @State var isLevelCompleted = false
     @State var isLevelFailed = false
     @State var isPause = false
-    @State var backgroundColorOfImage = Color.green
+    @State var backgroundColorOfImage = Color.white
     @State var timer: Timer?
     
     func buttonAction() {
@@ -46,8 +46,12 @@ struct GameView: View {
                             }
                             .frame(minWidth: 100, maxWidth: 135, minHeight: 78, maxHeight: 78)
                             .padding()
-                            .background((Color(#colorLiteral(red: 16/255, green: 117/255, blue: 189/255, alpha: 1))))
+                            .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
                             .cornerRadius(20)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(.white, lineWidth: 4)
+                            )
                         }
                         .offset(y: -180)
                         .padding()
@@ -247,10 +251,10 @@ struct MovingNumbers: View {
                                 .padding()
                                 .foregroundColor(.white)
                                 .font(.custom("Sequel-Regular", size: 20).bold())
-                                .background(.blue)
+                                .background(Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1)))
                                 .overlay {
                                     RoundedRectangle(cornerRadius: 0)
-                                        .stroke(lineWidth: 2)
+                                        .stroke(Color(#colorLiteral(red: 150/255, green: 39/255, blue: 1/255, alpha: 1)), lineWidth: 2)
                                 }
                                 .position(x: elements[index].coordinates.x, y: position.y)
                                 .frame(height: 50)
@@ -288,10 +292,10 @@ struct MovingNumbers: View {
                                 .padding()
                                 .foregroundColor(.white)
                                 .font(.custom("Sequel-Regular", size: 20).bold())
-                                .background(.blue)
+                                .background(Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1)))
                                 .overlay {
                                     RoundedRectangle(cornerRadius: 0)
-                                        .stroke(lineWidth: 2)
+                                        .stroke(Color(#colorLiteral(red: 150/255, green: 39/255, blue: 1/255, alpha: 1)), lineWidth: 2)
                                 }
                                 .position(x: elements2[index].coordinates.x, y: position.y)
                         }
@@ -340,15 +344,15 @@ struct CustomSlider: View {
                         .frame(width: geometry.size.width, height: 40)
                     RoundedRectangle(cornerRadius: 30)
                         .stroke(lineWidth: 20)
-                        .foregroundColor(.blue)
+                        .foregroundColor(Color(#colorLiteral(red: 145/255, green: 39/255, blue: 1/255, alpha: 1)))
                         .frame(width: geometry.size.width , height: 55)
                 }
                 ZStack {
                     Circle()
-                        .foregroundColor(.green)
+                        .foregroundColor(Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1)))
                         .overlay {
                             RoundedRectangle(cornerRadius: 30)
-                                .stroke(Color(#colorLiteral(red: 43/255, green: 110/255, blue: 42/255, alpha: 1)), lineWidth: 2)
+                                .stroke(Color(#colorLiteral(red: 115/255, green: 39/255, blue: 1/255, alpha: 1)), lineWidth: 2)
                         }
                 }
                 .offset(x: CGFloat(value) * geometry.size.width - 30, y: -2)

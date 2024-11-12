@@ -5,7 +5,7 @@ struct LevelView: View {
     @State var isMenuViewAvailible = false
     @State var levelNumber = UserDefaultsManager.defaults.object(forKey: Keys.levelNumber.rawValue) as? Int ?? 0 - 1
     @Binding var countWinOrLose: Int
-    @State var backgroundColorOfImage = Color.green
+    @State var backgroundColorOfImage = Color.white
     
     func buttonAction() {
         isGameViewAvailible = true
@@ -37,8 +37,12 @@ struct LevelView: View {
                                         .foregroundColor(.white)
                                         .bold()
                                         .padding()
-                                        .background((Color(#colorLiteral(red: 16/255, green: 117/255, blue: 189/255, alpha: 1))))
+                                        .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
                                         .cornerRadius(20)
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 20)
+                                                .stroke(.white, lineWidth: 2)
+                                        )
                                 } else if countWinOrLose == 2 {
                                     Text("LEVEL \(levelNumber) failed")
                                         .frame(width: 200, height: 20)
@@ -46,8 +50,12 @@ struct LevelView: View {
                                         .foregroundColor(.white)
                                         .bold()
                                         .padding()
-                                        .background((Color(#colorLiteral(red: 16/255, green: 117/255, blue: 189/255, alpha: 1))))
+                                        .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
                                         .cornerRadius(20)
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 20)
+                                                .stroke(.white, lineWidth: 2)
+                                        )
                                 }
                             }
                         
@@ -82,7 +90,7 @@ struct ButtonView: View {
                 Image(systemName: imageForButton)
                     .resizable()
                     .scaledToFit()
-                    .foregroundColor(.white)
+                    .foregroundColor(.red)
                     .frame(width: 35, height: 35)
                     .padding()
                     .background(backgroundColorOfImage)
@@ -91,8 +99,12 @@ struct ButtonView: View {
             }
         }
         .padding(EdgeInsets(top: 30, leading: 15, bottom: 30, trailing: 15))
-        .background((Color(#colorLiteral(red: 16/255, green: 117/255, blue: 189/255, alpha: 1))))
+        .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
         .cornerRadius(40)
+        .overlay(
+              RoundedRectangle(cornerRadius: 40)
+                  .stroke(.white, lineWidth: 3)
+          )
     }
 }
 
@@ -114,11 +126,15 @@ struct LabelLevelView: View {
         }
         .frame(width: 195, height: 88)
         .padding()
-        .background((Color(#colorLiteral(red: 16/255, green: 117/255, blue: 189/255, alpha: 1))))
+        .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
         .cornerRadius(20)
         .onAppear {
             level = UserDefaultsManager.defaults.object(forKey: Keys.levelNumber.rawValue) as? Int ?? 0
         }
+        .overlay(
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(.white, lineWidth: 4)
+        )
     }
 }
 struct StartView: View {
@@ -133,7 +149,7 @@ struct StartView: View {
                     .padding()
                     .background(colorForBack)
                     .font(.custom("Sequel-Regular", size: 30).bold())
-                    .foregroundColor(.white)
+                    .foregroundColor(.red)
                     .cornerRadius(20)
                     .bold()
             }
@@ -141,8 +157,12 @@ struct StartView: View {
         }
         .frame(width: 195, height: 88)
         .padding()
-        .background((Color(#colorLiteral(red: 16/255, green: 117/255, blue: 189/255, alpha: 1))))
+        .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
         .cornerRadius(20)
+        .overlay(
+            RoundedRectangle(cornerRadius: 40)
+                .stroke(.white, lineWidth: 4)
+        )
         .padding()
     }
 }
@@ -154,11 +174,11 @@ struct LevelRectangleView: View {
             ZStack {
                 ForEach(0..<levelNumberRectangle, id: \.self) { rectangle in
                     Rectangle()
-                        .fill((Color(#colorLiteral(red: 159/255, green: 233/255, blue: 221/255, alpha: 1))))
+                        .fill((Color(#colorLiteral(red: 160/255, green: 39/255, blue: 1/255, alpha: 1))))
                         .frame(width: 80, height: 80)
                         .overlay(
                             RoundedRectangle(cornerRadius: 0)
-                                .stroke(Color(#colorLiteral(red: 96/255, green: 154/255, blue: 138/255, alpha: 1)), lineWidth: 2)
+                                .stroke(Color(#colorLiteral(red: 110/255, green: 39/255, blue: 1/255, alpha: 1)), lineWidth: 2)
                         )
                         .rotation3DEffect(.degrees(10), axis: (x: 1.0, y: 0.0, z: 0.0))
                         .offset(y: 355 - CGFloat(rectangle * 120))
@@ -167,11 +187,11 @@ struct LevelRectangleView: View {
                 
                 ForEach(0...3, id: \.self) { shodowRectangle in
                     Rectangle()
-                        .fill((Color(#colorLiteral(red: 159/255, green: 253/255, blue: 221/255, alpha: 1))))
+                        .fill((Color(#colorLiteral(red: 160/255, green: 39/255, blue: 1/255, alpha: 1))))
                         .frame(width: 80, height: 80)
                         .overlay(
                             RoundedRectangle(cornerRadius: 0)
-                                .stroke(Color(#colorLiteral(red: 96/255, green: 154/255, blue: 138/255, alpha: 1)), lineWidth: 2)
+                                .stroke(Color(#colorLiteral(red: 110/255, green: 39/255, blue: 1/255, alpha: 1)), lineWidth: 2)
                         )
                         .rotation3DEffect(.degrees((10)), axis: (x: 1.0, y: 0.0, z: 0.0))
                         .offset(y: 345 - CGFloat(shodowRectangle * 120))

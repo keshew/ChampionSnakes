@@ -19,7 +19,7 @@ struct MenuView: View {
     @State var statusGameMode = "LEVELS"
     @State var isModeSlider = true
     @State var isGameSlider = false
-    @State var backgroundColorOfImage = Color.green
+    @State var backgroundColorOfImage = Color.white
     @State var sunCount  = UserDefaultsManager.defaults.object(forKey: Keys.sunCount.rawValue) as? Int ?? 0
     
     let options = ["LEVELS", "ENDLESS"]
@@ -148,17 +148,17 @@ struct ModeSegmentedPicker: View {
                         .frame(width: geometry.size.width / 1, height: height)
                     RoundedRectangle(cornerRadius: 30)
                         .stroke(lineWidth: 20)
-                        .foregroundColor(.blue)
+                        .foregroundColor(Color(#colorLiteral(red: 145/255, green: 39/255, blue: 1/255, alpha: 1)))
                         .frame(width: geometry.size.width / 1, height: height + 15)
                     
                 }
                 ZStack {
                     RoundedRectangle(cornerRadius: 30)
-                        .foregroundColor(.green)
+                        .foregroundColor(Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1)))
                     
                         .overlay {
                             RoundedRectangle(cornerRadius: 30)
-                                .stroke(Color(#colorLiteral(red: 43/255, green: 110/255, blue: 42/255, alpha: 1)), lineWidth: 0)
+                                .stroke(Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1)), lineWidth: 0)
                         }
                         .overlay {
                             if isModeSlider {
@@ -228,8 +228,12 @@ struct BalanceWithTitle: View {
         }
         .frame(minWidth: 100, maxWidth: 135, minHeight: 88, maxHeight: 88)
         .padding()
-        .background((Color(#colorLiteral(red: 16/255, green: 117/255, blue: 189/255, alpha: 1))))
+        .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
         .cornerRadius(20)
+        .overlay(
+              RoundedRectangle(cornerRadius: 20)
+                  .stroke(.white, lineWidth: 3)
+          )
     }
 }
 
@@ -242,8 +246,12 @@ struct TitleView: View {
                 .foregroundColor(.white)
         }
         .frame(width: 197, height: 45)
-        .background((Color(#colorLiteral(red: 16/255, green: 117/255, blue: 189/255, alpha: 1))))
+        .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
         .cornerRadius(50)
+        .overlay(
+              RoundedRectangle(cornerRadius: 20)
+                  .stroke(.white, lineWidth: 3)
+          )
     }
 }
 
@@ -260,10 +268,14 @@ struct BackwardButton: View {
                 .padding()
                 .bold()
                 .foregroundColor(.white)
-                .background(currentIndex == 0 ? Color.gray : Color.green)
+                .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
                 .cornerRadius(30)
         }
         .disabled(currentIndex == 0 ? true : false)
+        .overlay(
+            RoundedRectangle(cornerRadius: 30)
+                .stroke(.white, lineWidth: 2)
+        )
         .offset(x: -115)
     }
 }
@@ -281,11 +293,15 @@ struct ForwardButton: View {
                 .padding()
                 .bold()
                 .foregroundColor(.white)
-                .background(currentIndex == 2 ? Color.gray : Color.green)
+                .background((Color(#colorLiteral(red: 250/255, green: 39/255, blue: 1/255, alpha: 1))))
                 .cornerRadius(30)
             
         }
         .disabled(currentIndex == 2 ? true : false)
+        .overlay(
+            RoundedRectangle(cornerRadius: 30)
+                .stroke(.white, lineWidth: 2)
+        )
         .offset(x: 115)
     }
 }
@@ -303,7 +319,7 @@ struct ImageOfSport: View {
             .cornerRadius(10)
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke((Color(#colorLiteral(red: 16/255, green: 117/255, blue: 189/255, alpha: 1))), lineWidth: 5)
+                    .stroke(.white, lineWidth: 5)
             )
             .offset(x: offset)
     }
